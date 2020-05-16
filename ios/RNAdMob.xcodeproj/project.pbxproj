@@ -19,7 +19,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNAdMobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNAdMobTests.m */; };
 		53348DA273C6E35892472FB7 /* libPods-RNAdMob-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C467A58B39A01FAEA5E60BC8 /* libPods-RNAdMob-tvOS.a */; };
-		555AB3B42442E9C400DE36C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555AB3B32442E9C400DE36C2 /* GoogleService-Info.plist */; };
+		55697AAB24701DD00095CE1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55697AAA24701DD00095CE1E /* GoogleService-Info.plist */; };
 		ACF766652AEE862AF76EC9C7 /* libPods-RNAdMob-RNAdMobTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E097631B03E97FAF5C759CE /* libPods-RNAdMob-RNAdMobTests.a */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,7 @@
 		2D03B9AB124A3D394DCB9751 /* libPods-RNAdMob-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAdMob-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E8A19DD9D2D5B730BFFF68 /* Pods-RNAdMob-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAdMob-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNAdMob-tvOSTests/Pods-RNAdMob-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		4270C7E0D45BA3A69B20AEBD /* Pods-RNAdMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAdMob.release.xcconfig"; path = "Target Support Files/Pods-RNAdMob/Pods-RNAdMob.release.xcconfig"; sourceTree = "<group>"; };
-		555AB3B32442E9C400DE36C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55697AAA24701DD00095CE1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		562FCDF661B894D3FB1C5FB8 /* Pods-RNAdMob-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAdMob-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNAdMob-tvOS/Pods-RNAdMob-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		570A4AFC2F476A5B72A281FC /* Pods-RNAdMob-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAdMob-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNAdMob-tvOSTests/Pods-RNAdMob-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6895F8DCC13B57C6D3D3AED2 /* Pods-RNAdMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAdMob.debug.xcconfig"; path = "Target Support Files/Pods-RNAdMob/Pods-RNAdMob.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				555AB3B32442E9C400DE36C2 /* GoogleService-Info.plist */,
+				55697AAA24701DD00095CE1E /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* RNAdMob */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNAdMobTests */,
@@ -298,6 +298,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -345,7 +346,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				555AB3B42442E9C400DE36C2 /* GoogleService-Info.plist in Resources */,
+				55697AAB24701DD00095CE1E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +682,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -696,6 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RNAdMob;
 				PRODUCT_NAME = RNAdMob;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -708,7 +713,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RNAdMob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -718,6 +726,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RNAdMob;
 				PRODUCT_NAME = RNAdMob;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
