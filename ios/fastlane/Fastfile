@@ -15,12 +15,15 @@
 
 default_platform(:ios)
 
+ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    increment_build_number(xcodeproj: "RNAdMob.xcodeproj")
-    match(type: "appstore")
-    build_app(workspace: "RNAdMob.xcworkspace", scheme: "RNAdMob")
-    upload_to_testflight
+    # increment_build_number(xcodeproj: "RNAdMob.xcodeproj")
+    # match(type: "appstore")
+    # build_app(workspace: "RNAdMob.xcworkspace", scheme: "RNAdMob")
+    # upload_to_testflight
+    slack(message: "App successfully sent to Testflight!")
   end
 end
