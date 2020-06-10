@@ -1,8 +1,8 @@
-<a href="https://medium.com/@nicolas_dmg" rel="noopener noreferrer" target="_blank"><img src="https://cdn-images-1.medium.com/max/800/1*KdizDiR7kJ1vkhzwkfTjZg.jpeg" title="Medium Cover" alt="Medium Cover"></a>
+<a href="https://medium.com/@nicolas_dmg/automate-your-react-native-app-with-fastlane-ea516b4a893" rel="noopener noreferrer" target="_blank"><img src="https://cdn-images-1.medium.com/max/800/1*KdizDiR7kJ1vkhzwkfTjZg.jpeg" title="Medium Cover" alt="Medium Cover"></a>
 
 # Automate your React Native App with Fastlane
 
-> <a href="https://medium.com/@nicolas_dmg" rel="noopener noreferrer" target="_blank">Simplify Screenshots, beta deployment, app store deployment and signing in your React Native App 🚀</a>
+> <a href="https://medium.com/@nicolas_dmg/automate-your-react-native-app-with-fastlane-ea516b4a893" rel="noopener noreferrer" target="_blank">Simplify Screenshots, beta deployment, app store deployment and signing in your React Native App 🚀</a>
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) 
 
